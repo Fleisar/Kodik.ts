@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-typescript/base"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
+  "rules": {
+    "indent": ["error", "tab"],
+    "@typescript-eslint/indent": ["error", "tab"],
+    "no-tabs": "off",
+    "import/extensions": [
+      "error", "ignorePackages", {
+      "js": "ignorePackages",
+      "ts": "ignorePackages"
+    }]
+  }
+}
