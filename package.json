@@ -1,12 +1,16 @@
 {
-  "name": "kodik.ts",
+  "name": "@fleisar/kodik.ts",
   "version": "1.0.1",
   "description": "",
   "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
     "build-web": "tsc -p ./tsconfig.web.json",
-    "test": "npm run build && node dist/test"
+    "test": "npm run build && node dist/test",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
