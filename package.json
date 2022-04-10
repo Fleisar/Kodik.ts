@@ -3,15 +3,18 @@
   "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
     "build-web": "tsc -p ./tsconfig.web.json",
-    "test": "npm run build && node dist/test",
     "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fleisar/Kodik.ts.git"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
@@ -24,8 +27,5 @@
     "typescript": "^4.6.3"
   },
   "author": "Fleisar",
-  "license": "ISC",
-  "dependencies": {
-    "node-fetch": "^2.6.7"
-  }
+  "license": "ISC"
 }
