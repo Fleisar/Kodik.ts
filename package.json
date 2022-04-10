@@ -2,7 +2,7 @@
   "name": "@fleisar/kodik.ts",
   "version": "1.0.2",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
